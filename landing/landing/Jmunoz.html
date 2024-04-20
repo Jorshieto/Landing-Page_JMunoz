@@ -11,26 +11,36 @@
 </head>
 <body id="fondo">
     <div class="barra-navegacion">
-        <p class="texto-principal">Solventa - Líderes en solución informática</p>
-    </div>
-
+        <!-- Texto barra navegación -->
+        <p class="texto-principal"> Solventa - Líderes en solución informática </p>
+    </div>  
+    <!-- Contenedor principal -->
     <div class="container">
-        <div class="row justify-content-center align-items-center">
+        <!--alinear contenido -->
+        <div class="row justify-content-center align-items-center"> <!-- no eliminar esto o el formulario se baja y desordena-->
+            <!-- Primeras 6 columnas del Bootstrap -->
             <div class="col-md-6">
                 <div class="servicios">
-                    <p>Servicios Ofrecidos</p>
+                    <p> Servicios Ofrecidos </p>
                 </div>
+                <!--d-flex :establezco un contenedor como elemento flexible, (permite controlar el diseño y la alineación de los elementos usando flexbox
+                    justify-content-center: clase de Bootstrap se usa dentro de un contenedor flexible para ordenar los elementos horizontalmente en el centro del contenedor
+                    lo anterior se aplica a contenedor-imagen-->
                 <div class="contenedor-imagen d-flex justify-content-center">
                     <img src="servicios.png" alt="Imagen 1">
                 </div>
             </div>
+             <!-- las otras 6 columna de Bootstrap para completar las 12 -->
             <div class="col-md-6">
+                <!-- Formulario para el registro -->
                 <form class="formulario-registro" id="formulario">
-                    <h4>Para ser contactado por un ejecutivo, indíquenos:</h4>
+                    <h4> Para ser contactado por un ejecutivo, indíquenos: </h4>
+                    <!-- campos de entrada de datos para que el usuario nos entregue sus datos -->
                     <input class="controls" type="text" name="nombre" id="nombres" placeholder="Ingrese su Nombre">
                     <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
                     <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
                     <input class="controls" type="text" name="Numero" id="Numero" placeholder="Ingrese su Numero">
+                    <!-- Boton que si bien no guarda datos los restablece para que simule que guarda los datos en la bd-->
                     <input class="boton" type="reset" value="Quiero ser contactado">
                 </form>
             </div>

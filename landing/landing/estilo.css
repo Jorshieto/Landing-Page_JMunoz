@@ -1,77 +1,69 @@
 /* Estilo para el fondo */
 #fondo {
   background-image: url(./fondo.png);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: fixed;
-  background-size: cover;
+  background-repeat: no-repeat;     /*  hace que la imagen de fondo no se repita */
+  background-position: center center; /* centro horizontal y vertical*/
+  background-attachment: fixed; /*hace que la imagen de fondo sea fija */
+  background-size: cover; /*hace que la imagen cubra todo el fondo*/
 }
 
-/* Reset de estilos */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Estilo para el párrafo */
+/* Estilo para párrafo */
 .texto-principal {
   margin-top: 10px;
   color: white;
-  font-size: 27px;
-  font-family: Arial, sans-serif;
-  position: fixed;
-  top: 0;
-  left: 25;
+
+/* Reset de estilos */
+* {
+  margin: 0;  /* elimino margenes*/
+  padding: 0; /*elimino rellnos */
+  box-sizing: border-box; /*establesco molde como border-box*/
 }
 
+}
 /* Estilo para la barra de navegación */
 .barra-navegacion {
-  width: 100%;
-  height: 50px;
-  background: #24303c;
-  position: fixed;
-  top: 0;
-  left: 0;
+  width: 100%; /*ancho*/
+  height: 50px; /*altura */
+  background: #24303c; /*color*/
+  position: fixed; /* la fije en la parte superiot */
 }
 /* Estilo para la imagen */
 .contenedor-imagen {
-  display: flex;
+  display: flex; /* aplico Flexbox al contenedor de la imagen */
 }
 
 .contenedor-imagen img {
-  margin-top: 1px;
-  max-width: 800px;
-  height: auto;
-  box-shadow: 7px 13px 37px #000;
+  max-width: 100%; /* Imagen adaptativa */
+  height: auto; /* la altura se ajustara automáticamente */
+  box-shadow: 7px 13px 37px #000; /* Agrega una sombra para que se vea esthetic */
 }
 
 /* Estilo para los servicios */
 .servicios {
-  color: white;
-  font-size: 27px;
-  margin-top: 26%;
+  color: white; /*color*/
+  font-size: 27px; /*tamaño de la fuente*/
+  margin-top: 20%;  /* Margen superior del 20% */
 }
 
 /* Estilo para el formulario de registro */
 .formulario-registro {
   
-  width: 400px;
+  width: 400px; /* Ancho */
   background: #24303c;
-  padding: 30px;
-  margin: auto;
-  margin-top: 35%;
+  padding: 30px;   /* Relleno interior */
+  margin: auto; /* Centra horizontalmente */
+  margin-top: 25%; /* Margen superior del 25% cuando hay un margen top arriba se suman */
   border-radius: 4px;
   font-family: 'calibri';
-  color: white;
+  color: white; /* color del texto */
   box-shadow: 7px 13px 37px #000;
 }
 
 /* Estilo para los controles del formulario */
 .controls {
-  width: 100%;
-  background: #24303c;
-  padding: 10px;
+  width: 100%; /* Ancho */
+  background: #24303c;  /* color de fondo */
+  padding: 10px; /* Relleno interior */
   border-radius: 4px;
   margin-bottom: 16px;
   border: 1px solid #1f53c5;
