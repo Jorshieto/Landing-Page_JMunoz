@@ -6,7 +6,6 @@
   background-attachment: fixed; /*hace que la imagen de fondo sea fija */
   background-size: cover; /*hace que la imagen cubra todo el fondo*/
 }
-
 /* Estilo para párrafo */
 .texto-principal {
   margin-top: 10px;
@@ -18,8 +17,8 @@
   padding: 0; /*elimino rellnos */
   box-sizing: border-box; /*establesco molde como border-box*/
 }
-
 }
+
 /* Estilo para la barra de navegación */
 .barra-navegacion {
   width: 100%; /*ancho*/
@@ -27,35 +26,32 @@
   background: #24303c; /*color*/
   position: fixed; /* la fije en la parte superiot */
 }
-/* Estilo para la imagen */
+
+/* Estilo para el contenedor de la imagen */
 .contenedor-imagen {
+  margin-top: 50px; /* Genera un espacio superior de 50px */
   display: flex; /* aplico Flexbox al contenedor de la imagen */
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* centra verticalmente */
 }
 
+/* Estilo para la imagen dentro del contenedor */
 .contenedor-imagen img {
   max-width: 100%; /* Imagen adaptativa */
-  height: auto; /* la altura se ajustara automáticamente */
-  box-shadow: 7px 13px 37px #000; /* Agrega una sombra para que se vea esthetic */
-}
-
-/* Estilo para los servicios */
-.servicios {
-  color: white; /*color*/
-  font-size: 27px; /*tamaño de la fuente*/
-  margin-top: 20%;  /* Margen superior del 20% */
+  box-shadow: 7px 13px 37px #000; /* Agrega una sombra para que se vea estético */
 }
 
 /* Estilo para el formulario de registro */
 .formulario-registro {
-  
-  width: 400px; /* Ancho */
+  margin-top: 50px; /* Genera un espacio superior de 50px */
+  width: 80%; /* Ancho del 80% de la ventana del navegador */
+  max-width: 400px; /* Ancho máximo de 400px para mantener la legibilidad */
   background: #24303c;
-  padding: 30px;   /* Relleno interior */
-  margin: auto; /* Centra horizontalmente */
-  margin-top: 25%; /* Margen superior del 25% cuando hay un margen top arriba se suman */
+  padding: 30px; /* Relleno interior */
+  margin: 25% auto; /* Margen superior e inferior del 25% y centrado horizontalmente */
   border-radius: 4px;
   font-family: 'calibri';
-  color: white; /* color del texto */
+  color: white; /* Color del texto */
   box-shadow: 7px 13px 37px #000;
 }
 
@@ -82,4 +78,17 @@
   color: white;
   margin: 16px 0;
   font-size: 16px;
+}
+
+.referencias {
+  width: 100%;
+  display: flex; /* aplico Flexbox al contenedor de la imagen */
+  justify-content: center; /* centra horizontalmente */
+  align-items: center; /* centra verticalmente */
+}
+
+.referencias img {
+  max-width: 90%; /* Imagen adaptativa */
+  height: auto; /* la altura se ajustará automáticamente */
+  box-shadow: 7px 13px 37px #000; /* Agrega una sombra para que se vea esthetic */
 }

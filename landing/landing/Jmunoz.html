@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--referencia relativa al archivo estilo.css que se encuentra en la carpeta de mi HTML.-->
+    <!-- Referencia relativa al archivo estilo.css que se encuentra en la carpeta de mi HTML. -->
     <link rel="stylesheet" href="estilo.css">
-    <!--referencia absoluta al archivo CSS de Bootstrap -->
+    <!-- Referencia absoluta al archivo CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body id="fondo">
@@ -17,34 +17,34 @@
     </div>  
     <!-- Contenedor principal -->
     <div class="container">
-        <!--alinear contenido -->
-        <div class="row justify-content-center align-items-center"> <!-- no eliminar esto o el formulario se baja y desordena-->
+        <!-- Alinear contenido -->
+        <div class="row justify-content-center align-items-center"> <!-- No eliminar esto o el formulario se baja y desordena -->
             <!-- Primeras 6 columnas del Bootstrap -->
             <div class="col-md-6">
-                <div class="servicios">
-                    <p> Servicios Ofrecidos </p>
-                </div>
-                <!--d-flex :establezco un contenedor como elemento flexible, (permite controlar el diseño y la alineación de los elementos usando flexbox
-                    justify-content-center: clase de Bootstrap se usa dentro de un contenedor flexible para ordenar los elementos horizontalmente en el centro del contenedor
-                    lo anterior se aplica a contenedor-imagen-->
+                <!-- Contenedor para la imagen de servicios -->
                 <div class="contenedor-imagen d-flex justify-content-center">
-                    <!--referencia relativa a la imagen que está en la misma carpeta que mi HTML-->
+                    <!-- Referencia relativa a la imagen que está en la misma carpeta que mi HTML -->
                     <img src="servicios.png" alt="Imagen 1">
                 </div>
             </div>
-             <!-- las otras 6 columna de Bootstrap para completar las 12 -->
+             <!-- Las otras 6 columnas de Bootstrap para completar las 12 -->
             <div class="col-md-6">
                 <!-- Formulario para el registro -->
                 <form class="formulario-registro" id="formulario">
                     <h4> Para ser contactado por un ejecutivo, indíquenos: </h4>
-                    <!-- campos de entrada de datos para que el usuario nos entregue sus datos -->
+                    <!-- Campos de entrada de datos para que el usuario nos entregue sus datos -->
                     <input class="controls" type="text" name="nombre" id="nombres" placeholder="Ingrese su Nombre">
                     <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
                     <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
-                    <input class="controls" type="text" name="Numero" id="Numero" pattern="[0-9]*" placeholder="Ingrese su Numero">
-                    <input class="boton" type="submit" value="Quiero ser contactado"> <!-- SUBMIT NOS PERMITE ENVIAR LOS DATOS-->
+                    <input class="controls" type="text" name="Numero" id="Numero" pattern="[0-9]*" placeholder="Ingrese su Numero"> <!-- Pattern="[0-9]*" HACE QUE SOLO SE PUEDA
+                    ENVIAR EL FORMULARIO UNA VEZ QUE SE INGRESEN SOLO NUMEROS EN EL CAMPO NUMERICO -->
+                    <input class="boton" type="submit" value="Quiero ser contactado"> <!-- Submit NOS PERMITE ENVIAR LOS DATOS -->
                 </form>
             </div>
+        </div>
+        <!-- referencias por parte de los clientes -->
+        <div class="referencias">
+            <img src="referencia.PNG" alt="Imagen 1">
         </div>
     </div>
 </body>
